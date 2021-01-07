@@ -1,10 +1,13 @@
 function textcheck(num ){
-    let i = 0 ;
+    let i = 1;
+    let mot = "";
     while(num >= i){
-        console.log(i);
+        mot += "popiui ";
+      
         i++;
+       
     }
-    
+    console.log(mot);
 }
 
-numCheck(10);
+textcheck(5);

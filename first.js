@@ -1,6 +1,6 @@
 function ageCheck(age){
     if (age >= 18){
-        return "Vous pouvez entrer ";
+        return "Vous pouvez entrer  car vous avez " + age + " ans";
     }
         return "Site interdit aux mineurs.";
     }
