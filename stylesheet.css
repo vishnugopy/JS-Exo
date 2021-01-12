@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #000000;
+    padding: 2%;
+    color: yellow;
+   
+    
+}
+header div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header button{
+    width: 20%;
+}
+
+header a {
+    color: yellow;
+}
+
+button{
+    border: none;
+    background: white;
+    color: black; 
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buttt{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: yellow;
+    color: black; 
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button:hover{
+    background: yellow;
+    color: black;
+}
+
+
+h1{
+    margin: 0;
+
+    
+}
+
+header nav{
+    color: azure;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+a{
+    text-decoration: none;
+    color: bisque;
+
+}
+
+main{
+    padding: 1%;
+    background-color: white;
+    margin: 0 auto;
+   
+}
+.firstblock{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    
+}
+
+.firstblock div:nth-child(1) {
+    padding: 1%;
+    width: 80%;
+    
+}
+
+.imgspace{
+    padding: 1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ivi{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+aside{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+}
+
+.biggie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    padding: 1%;
+}
+
+.biggie p{
+width: 400px;
+}
+
+h2,h3{
+    margin: 1%;
+    text-align: center;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 0.5px solid black;
+}
+
+.tree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.tree figure{
+    width: 33%;
+    border: 2px solid yellow;
+    padding:1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.tree figure:nth-child(3) {
+    flex-direction: column;
+}
+
+figcaption{
+    padding: 2%;
+}
+
+.social div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    background: black;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    align-items: center;
+}
