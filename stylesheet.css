@@ -41,6 +41,10 @@ button{
     font-family: 'Quicksand', sans-serif;
 }
 
+section{
+    border-bottom: 2px solid rgb(36, 36, 0);  
+}
+
 .buttt{
     width: 100%;
     height: 30px;
@@ -57,10 +61,11 @@ button:hover{
 }
 
 
+
+
 h1{
     margin: 0;
-
-    
+ 
 }
 
 header nav{
@@ -148,11 +153,10 @@ h2,h3{
     text-align: center;
 }
 
-
 img{
     width: 200px;
     height: 200px;
-    border: 0.5px solid black;
+    border: 3px solid rgb(255, 238, 0);
 }
 
 .tree{
@@ -164,7 +168,7 @@ img{
 
 .tree figure{
     width: 33%;
-    border: 2px solid yellow;
+    border: 2px solid black;
     padding:1%;
     display: flex;
     flex-direction: row;
@@ -177,6 +181,11 @@ img{
 
 figcaption{
     padding: 2%;
+}
+
+iframe{
+    border-radius: 15px;
+    border: 2px solid yellow;
 }
 
 .social div{
