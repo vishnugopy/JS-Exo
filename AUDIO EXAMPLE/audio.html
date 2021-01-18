@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="play">ANTOINE</button>
+    <button id="play1">VISHNU</button>
+    <button id="play2">JEROME</button>
+
+    <audio controls id="music">
+        <source src="1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio controls id="music1">
+        <source src="2.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio controls id="music2">
+        <source src="3.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        let player = document.getElementById("play");
+        let audio = document.getElementById("music");
+
+        let player1 = document.getElementById("play1");
+        let audio1 = document.getElementById("music1");
+
+        let player2 = document.getElementById("play2");
+        let audio2 = document.getElementById("music2");
+
+
+
+        function run() { audio.play(); }
+        function run1() { audio1.play(); }
+        function run2() { audio2.play(); }
+
+        player.addEventListener('click', run);
+        player1.addEventListener('click', run1);
+        player2.addEventListener('click', run2);
+
+    </script>
+
+    <style>
+        audio {
+            display: none;
+            width: 90%;
+            border: 2px solid rgb(0, 217, 255);
+            outline: none;
+        }
+
+        body {
+            margin: 0 auto;
+            padding: 0;
+            font-family: 'Potta One', cursive;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+
+        }
+
+
+
+        button {
+            font-family: 'Potta One', cursive;
+            background-color: rgb(0, 217, 255);
+            color: white;
+            margin: 3% auto;
+            width: 30%;
+            height: 500px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            font-size: 50px;
+            padding: 1%;
+        }
+
+        button:hover {
+            background-color: rgba(255, 0, 85, 0.664);
+            color: white;
+        }
+    </style>
+</body>
+
+</html>

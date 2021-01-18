@@ -18,12 +18,12 @@ ContentManager.prototype.generateProductsCards = function () {
 
 
     let grandBlog = document.querySelector("#bigboy");
-    let str = " " ;
-        
+    let str = " ";
+
     for (let i = 0; i < this.products.length; i++) {
 
-        str += 
-        `<figure>
+        str +=
+            `<figure>
     <img alt='A Taste of the Kitchen'
     src='${this.products[i].img}'>
     <figcaption>
@@ -31,20 +31,20 @@ ContentManager.prototype.generateProductsCards = function () {
     <span class='tag'>${this.products[i].subtitle}</span>
     <p>${this.products[i].resume}</p>
     <div class='rating'>`;
-    for (let y = 0; y < this.ratingAverage(this.products[i].ratings); y++) {
-       str += "<span class='fa fa-star'></span>" ;   
-        
-    }
+        for (let y = 0; y < this.ratingAverage(this.products[i].ratings); y++) {
+            str += "<span class='fa fa-star'></span>";
 
-    str +=
-    
-    `</div>
+        }
+
+        str +=
+
+            `</div>
     </figcaption>
     </figure>`;
- 
+
     }
 
-grandBlog.innerHTML = str;
+    grandBlog.innerHTML = str;
 
 }
 
@@ -58,11 +58,11 @@ grandBlog.innerHTML = str;
 
 // Methode qui retourne la moyenne des notes attribuer a un product
 ContentManager.prototype.ratingAverage = function (ratings) {
-    let total = 0 ;
+    let total = 0;
     for (let i = 0; i < ratings.length; i++) {
-        total += ratings[i];   
+        total += ratings[i];
     }
-    return total/ratings.length;
+    return total / ratings.length;
 
 }
 
