@@ -4,17 +4,10 @@ let arr = [];
 
 window.addEventListener("keydown" ,(e) =>{
 arr.push(e.key);
-
-
-
- for (let i = 0; i < arr.length; i++) {
-   
-   tata.textContent = arr ;
-   console.log(arr);
- }
-
- if (arr.length === 42) {
+tata.textContent = arr ;
+if (arr.length === 43) {
      arr.splice(0,1);
+     console.log(arr);
  }
 
 })
