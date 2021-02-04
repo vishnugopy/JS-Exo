@@ -4,7 +4,7 @@ let newwhite = document.createElement("div");
 let okbutton = whitebox.querySelector("a");
 let deletebutton = document.createElement("button")
 let currenttime = new Date();
-let expire; 
+let expire = new Date();; 
 
 
 
@@ -14,16 +14,12 @@ newwhite.appendChild(deletebutton);
 deletebutton.textContent = "Supprimer le cookie" ;
 
 okbutton.addEventListener("click" , ()=>{
-
-    expire = new Date();
     expire.setDate(expire.getDate()+1);
     console.log(expire);
     document.cookie = "username=John Doe; expires=" + expire;
     whitebox.style.display = "none";
 
     console.log(document.cookie); 
-
-
 
     expiretime();
 }) 
@@ -40,7 +36,7 @@ deletebutton.addEventListener("click" , () =>{
 
 function expiretime(){
     if (currenttime == expire) {
-    document.cookie = ``;
+    document.cookie = "username= ; expires = " + expire.setDate(expire.getDate()-2) ;
     whitebox.style.display = "block";
     }else{
      whitebox.style.display = "none"; 
@@ -49,9 +45,9 @@ function expiretime(){
 
 window.addEventListener("load" , ()=>{
     if (document.cookie === false) {
-        whitebox.style.display = "none"; 
+        whitebox.style.display = "block"; 
         }else{
-        whitebox.style.display = "block";
+        whitebox.style.display = "none";
         }
 })
 
