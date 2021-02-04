@@ -157,10 +157,6 @@ footer.main_footer a {
 /* INSERT YOUR MEDIA QUERIES HERE */
 @media screen and (max-width: 960px) {
 
-body{
-  background-color: red;
-}
-
 nav.main-nav {
   background-color: #7e52a0;
   width: 100%;
@@ -212,6 +208,87 @@ aside.main_aside_right {
   border-top: 5px solid #7e52a0;
 }
 
-
-
 }
+
+@media screen and (max-width: 480px) {
+
+  .home div.hero {
+    display: none;
+  }
+
+  nav.main-nav ul {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: .5em;
+    padding: 0;
+    list-style: none;
+  }
+  
+
+  nav.main-nav {
+    background-color: #7e52a0;
+    width: 100%;
+    
+  }
+  
+  nav.main-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: .5em 0;
+  }
+  
+  nav.main-nav a {
+    display: block;
+    min-width: 120px;
+    padding: .3em;
+    border-radius: 0px;
+  }
+  
+  nav.main-nav ul li:first-child a{
+    border-radius: 4px  4px 0 0;
+  }
+  
+  nav.main-nav ul li:last-child a{
+    border-radius: 0 0 4px  4px ;
+  }
+  
+  section.main_content {
+    width: 100%;
+    
+  }
+  
+  aside.main_aside_left, aside.main_aside_right {
+    width: 100%;
+  }
+  
+  aside.main_aside_left {
+    order: 3;
+    border-top: 3px solid #7e52a0;
+    border-right:none;
+
+  
+  }
+  
+  aside.main_aside_right {
+    order: 4;
+    border-left:none;
+    border-top: 3px solid #7e52a0;
+  }
+
+  footer.main_footer ul {
+    width: 100%;
+    padding: 1% 1%;
+  }
+
+  footer.main_footer ul:nth-child(2) {
+    border-bottom: 1px solid #7e52a0;
+    border-top: 1px solid #7e52a0;
+    padding: 5% 1%;
+
+  }
+  
+  
+  
+  }
