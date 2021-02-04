@@ -9,11 +9,9 @@ let currentY;
 let xOffset = 0;
 let yOffset = 0;
 
-
 container.addEventListener("mousedown", dragStart);
 container.addEventListener("mouseup", dragEnd);
 container.addEventListener("mousemove", drag);
-
 container.style.overflow = "hidden";
 function dragStart(e) {
  
@@ -24,7 +22,6 @@ startigY = e.clientY - yOffset;
     active = true;
   }
 }
-
 
 function drag(e) {
   if (active) {
@@ -44,7 +41,6 @@ function dragEnd(e) {
     currentY = startigY ;
     active = false;
 }
-
 
 function setTranslate(currentX, currentY, dragItem) {
   dragItem.style.transform = "translate3d(" + currentX + "px, " + currentY + "px, 0)";
