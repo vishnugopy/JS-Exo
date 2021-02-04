@@ -22,15 +22,11 @@ okbutton.addEventListener("click" , ()=>{
     expiretime();
 }) 
 
-
 deletebutton.addEventListener("click" , () =>{
     document.cookie = "username= ; expires = " + expire.setDate(expire.getDate()-2) ;
     // cookies.remove(username)
     whitebox.style.display = "block";
 })
-
-
-
 
 function expiretime(){
     if (currenttime == expire) {
