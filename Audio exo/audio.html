@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>MUSIC EXAMPLE</title>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
     <button id="play2">JEROME</button>
 
     <audio controls id="music">
+        <source src="1.mp3" type="audio/mp3">
         <source src="1.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
@@ -47,7 +48,7 @@
         function run2() { audio2.play(); }
 
         player.addEventListener('click', run);
-        player1.addEventListener('click', run1);
+        player1.addEventListener('mouseover', run1);
         player2.addEventListener('click', run2);
 
     </script>
