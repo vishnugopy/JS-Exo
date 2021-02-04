@@ -4,9 +4,7 @@ let newwhite = document.createElement("div");
 let okbutton = whitebox.querySelector("a");
 let deletebutton = document.createElement("button")
 let currenttime = new Date();
-let expire = new Date();; 
-
-
+let expire = new Date();
 
 container.appendChild(newwhite);
 newwhite.appendChild(deletebutton);
