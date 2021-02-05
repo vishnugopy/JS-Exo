@@ -14,34 +14,44 @@ deletebutton.textContent = "Supprimer le cookie" ;
 okbutton.addEventListener("click" , ()=>{
     expire.setDate(expire.getDate()+1);
     console.log(expire);
-    document.cookie = "username=John Doe; expires=" + expire;
-    whitebox.style.display = "none";
-
-    console.log(document.cookie); 
-
+    document.cookie = "username=John Doe; expires=" +  expire;
+    console.log(document.cookie);
     expiretime();
 }) 
 
 deletebutton.addEventListener("click" , () =>{
-    document.cookie = "username= ; expires = " + expire.setDate(expire.getDate()-2) ;
+    expire.setDate(expire.getDate()-2)
+    document.cookie = "username= ; expires = " + expire ;
     // cookies.remove(username)
-    whitebox.style.display = "block";
+    console.log(document.cookie); 
+    console.log(expire);
+
 })
 
 function expiretime(){
     if (currenttime == expire) {
     document.cookie = "username= ; expires = " + expire.setDate(expire.getDate()-2) ;
-    whitebox.style.display = "block";
     }else{
-     whitebox.style.display = "none"; 
+     console.log(document.cookie); 
     }
 }
 
+function afficher(){
+    whitebox.style.display = "block"; 
+    newwhite.style.display = "none";
+}
+
+function cacher(){
+    whitebox.style.display = "none";
+    newwhite.style.display = "block";
+}
+
+
 window.addEventListener("load" , ()=>{
-    if (document.cookie === false) {
-        whitebox.style.display = "block"; 
+    if (document.cookie === true) {
+            afficher();
         }else{
-        whitebox.style.display = "none";
+            cacher();
         }
 })
 
